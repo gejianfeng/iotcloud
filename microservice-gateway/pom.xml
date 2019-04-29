@@ -10,11 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.iot.iotcloud.microservice</groupId>
-    <artifactId>eureka</artifactId>
+    <artifactId>gateway</artifactId>
     <packaging>jar</packaging>
 
-    <name>Eureka Service</name>
-    <description>Eureka Service for IoT Cloud</description>
+    <name>Gateway Service</name>
+    <description>Gateway Service for IoT Cloud</description>
 
     <dependencies>
         <dependency>
@@ -29,12 +29,12 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
         <dependency>
@@ -72,7 +72,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.iot.iotcloud.microservice.eureka.EurekaApplication</mainClass>
+                            <mainClass>com.iot.iotcloud.microservice.gateway.GatewayApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -83,7 +83,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.iot.iotcloud.microservice.eureka.EurekaApplication</mainClass>
+                    <mainClass>com.iot.iotcloud.microservice.gateway.GatewayApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>
