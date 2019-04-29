@@ -1,0 +1,26 @@
+server:
+  port: 20000
+
+spring:
+  application:
+    name: eureka-service
+
+eureka:
+  instance:
+    hostname: ioteureka1.com
+  client:
+    service-url:
+      defaultZone: http://ioteureka1.com:20000/eureka,http://ioteureka2.com:20001/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true

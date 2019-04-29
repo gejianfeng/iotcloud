@@ -1,0 +1,11 @@
+**/target/
+**/.idea/
+**/.DS_Store/
+**/test/
+**/logs/
+
+**/*.iml
+**/*.log
+**/*.class
+**/*.jar
+**/*.out
