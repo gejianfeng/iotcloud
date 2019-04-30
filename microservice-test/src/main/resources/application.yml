@@ -1,0 +1,24 @@
+server:
+  port: 20020
+
+spring:
+  application:
+    name: test-service
+
+eureka:
+  instance:
+    hostname: iottest1.com
+  client:
+    service-url:
+      defaultZone: http://ioteureka1.com:20000/eureka,http://ioteureka2.com:20001/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true

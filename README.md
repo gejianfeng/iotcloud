@@ -13,3 +13,11 @@
 * 启动命令:<br/>
 </t>`nohup java -jar gateway-1.0.0.0.jar --server.port=20010 --eureka.instance.hostname=iotgateway1.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> gateway-20010.out &`<br/>
 </t>`nohup java -jar gateway-1.0.0.0.jar --server.port=20011 --eureka.instance.hostname=iotgateway2.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> gateway-20011.out &`
+
+### Test Service
+
+* 端口范围:<br/>
+</t>20020 - 20029
+* 启动命令:<br/>
+</t>`nohup java -jar test-1.0.0.0.jar --server.port=20020 --eureka.instance.hostname=iottest1.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> test-20020.out &`<br/>
+</t>`nohup java -jar test-1.0.0.0.jar --server.port=20021 --eureka.instance.hostname=iottest2.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> test-20021.out &`
