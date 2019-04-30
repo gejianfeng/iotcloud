@@ -12,6 +12,7 @@
         <module>microservice-gateway</module>
         <module>library-core</module>
         <module>library-common</module>
+        <module>microservice-test</module>
     </modules>
     <packaging>pom</packaging>
 
