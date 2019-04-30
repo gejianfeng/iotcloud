@@ -10,8 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.iot.iotcloud.library</groupId>
-    <artifactId>core</artifactId>
+    <artifactId>common</artifactId>
 
-    <name>Core Library</name>
-    <description>Core Library for IoT Cloud</description>
+    <name>Common Library</name>
+    <description>Common Library for IoT Cloud</description>
 </project>

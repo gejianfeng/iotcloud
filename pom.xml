@@ -11,6 +11,7 @@
         <module>microservice-eureka</module>
         <module>microservice-gateway</module>
         <module>library-core</module>
+        <module>library-common</module>
     </modules>
     <packaging>pom</packaging>
 
