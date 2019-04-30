@@ -13,6 +13,7 @@
         <module>library-core</module>
         <module>library-common</module>
         <module>microservice-test</module>
+        <module>microservice-auth</module>
     </modules>
     <packaging>pom</packaging>
 
