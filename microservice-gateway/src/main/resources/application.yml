@@ -6,9 +6,13 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
+      routes:
+        - id: microservice_test_route
+          uri: lb://TEST-SERVICE
+          predicates:
+            - Path=/test/**
+          filters:
+            - StripPrefix=1
 
 eureka:
   instance:
