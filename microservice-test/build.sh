@@ -11,6 +11,11 @@ mvn clean
 mvn clean install
 
 cd ..
+cd library-model
+mvn clean
+mvn clean install
+
+cd ..
 cd microservice-test
 mvn clean
 mvn package

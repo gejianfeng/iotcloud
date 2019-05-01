@@ -14,6 +14,7 @@
         <module>library-common</module>
         <module>microservice-test</module>
         <module>microservice-auth</module>
+        <module>library-model</module>
     </modules>
     <packaging>pom</packaging>
 

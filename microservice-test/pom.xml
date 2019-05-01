@@ -55,6 +55,12 @@
 
         <dependency>
             <groupId>com.iot.iotcloud.library</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.iot.iotcloud.library</groupId>
             <artifactId>common</artifactId>
             <version>1.0.0.0</version>
         </dependency>
@@ -91,7 +97,7 @@
                         <configuration>
                             <file>${basedir}/../library-common/target/common-1.0.0.0.jar</file>
                             <repositoryLayout>default</repositoryLayout>
-                            <groupId>com.iotsh.iotcloud.library</groupId>
+                            <groupId>com.iot.iotcloud.library</groupId>
                             <artifactId>common</artifactId>
                             <version>1.0.0.0</version>
                             <packaging>jar</packaging>
@@ -108,8 +114,25 @@
                         <configuration>
                             <file>${basedir}/../library-core/target/core-1.0.0.0.jar</file>
                             <repositoryLayout>default</repositoryLayout>
-                            <groupId>com.iotsh.iotcloud.library</groupId>
+                            <groupId>com.iot.iotcloud.library</groupId>
                             <artifactId>core</artifactId>
+                            <version>1.0.0.0</version>
+                            <packaging>jar</packaging>
+                            <generatePom>true</generatePom>
+                        </configuration>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>install-model-library</id>
+                        <phase>clean</phase>
+                        <configuration>
+                            <file>${basedir}/../library-model/target/model-1.0.0.0.jar</file>
+                            <repositoryLayout>default</repositoryLayout>
+                            <groupId>com.iot.iotcloud.library</groupId>
+                            <artifactId>model</artifactId>
                             <version>1.0.0.0</version>
                             <packaging>jar</packaging>
                             <generatePom>true</generatePom>
