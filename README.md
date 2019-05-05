@@ -21,3 +21,19 @@
 * 启动命令:<br/>
 </t>`nohup java -jar test-1.0.0.0.jar --server.port=20020 --iotcloud.serviceId=cbd2989e-33e3-433c-bc05-27f26311dffb --eureka.instance.hostname=iottest1.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> test-20020.out &`<br/>
 </t>`nohup java -jar test-1.0.0.0.jar --server.port=20021 --iotcloud.serviceId=d2e20270-30ca-4b87-ac20-53b776fa08c5 --eureka.instance.hostname=iottest2.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> test-20021.out &`
+
+### Auth Service
+
+* 端口范围:<br/>
+</t>20030 - 20039
+* 启动命令:<br/>
+</t>`nohup java -jar auth-1.0.0.0.jar --server.port=20030 --eureka.instance.hostname=iotauth1.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> auth-20030.out &`<br/>
+</t>`nohup java -jar auth-1.0.0.0.jar --server.port=20031 --eureka.instance.hostname=iotauth2.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> auth-20031.out &`
+
+### Account Service
+
+* 端口范围:<br/>
+</t>20040 - 20049
+* 启动命令:<br/>
+</t>`nohup java -jar account-1.0.0.0.jar --server.port=20040 --eureka.instance.hostname=iotaccount1.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> account-20040.out &`<br/>
+</t>`nohup java -jar account-1.0.0.0.jar --server.port=20041 --eureka.instance.hostname=iotaccount2.com --eureka.client.serviceUrl.defaultZone=http://ioteureka1.com:20000/eureka/,http://ioteureka2.com:20001/eureka/ >> account-20041.out &`

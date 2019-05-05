@@ -15,6 +15,9 @@
         <module>microservice-test</module>
         <module>microservice-auth</module>
         <module>library-model</module>
+        <module>library-dal</module>
+        <module>microservice-account</module>
+        <module>library-account-model</module>
     </modules>
     <packaging>pom</packaging>
 
